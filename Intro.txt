@@ -5,3 +5,11 @@ Amazon S3 - The images for the employees will be stored using the object storage
 IAM - Identity Access Management For Security and Analysis.
 We will use Amazon CloudWatch for monitoring this solution, and we will also want to ensure that our application is scalable and fault tolerant. 
 So I'm going to go ahead and add Amazon Elastic Load Balancing and Amazon EC2 Auto Scaling to this diagram. For security and identity, we will be using Amazon Identity and Access Management or IAM.
+Availability Zone (AG) - Clusters of Data Centres to protect our data in case one data centre goes down another one is up and running. They are connected with high speed cables and low latency. 
+A group(cluster) of AZ is called a REGION. 
+Choosing a region - (Compliance(Country/Complany Rules that Data Should be Stored Here only VVI) , Latency(all about load time) , Pricing , Service Availability)
+Edge Locaitons are available throwuhout the world (Amazon CLoud Front) they have frequently accessed information(a copy of that data cached) so that we can reduce the latency. 
+
+Interaction with AWS :-
+AWS API - for logically managing the cloud infrastructure we use API calls for CRUD
+ways to interact with the AWS API a) The AWS management Console b) The AWS CommandLine Interface c) The AWS Software Development Kits
