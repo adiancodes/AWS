@@ -1,0 +1,7 @@
+Amazon VPC - Virtual Private CLoud (It is a private Network to build application)
+Amazon EC2 - Amazon ELastic Compute Cloud (It is used to host the backend code of the project) - Service that essentially offers Virtual Machines on AWS 
+Amazon RDS - Amazon Related Database Service (It is basically a databse for storing of information)
+Amazon S3 - The images for the employees will be stored using the object storage service, Amazon Simple Storage Service or S3, which allows the unlimited storage of any type of file, like images in our example.
+IAM - Identity Access Management For Security and Analysis.
+We will use Amazon CloudWatch for monitoring this solution, and we will also want to ensure that our application is scalable and fault tolerant. 
+So I'm going to go ahead and add Amazon Elastic Load Balancing and Amazon EC2 Auto Scaling to this diagram. For security and identity, we will be using Amazon Identity and Access Management or IAM.
