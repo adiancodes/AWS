@@ -1,0 +1,34 @@
+AMI - Amazon Machine Image (Contains information about how we want our instance to be configures like we can choose which Opearting System we want to use )
+Instance types - we can also choose them according to our need so that we get the perfect hardware
+t3.medium
+a1.large 
+(a1,t3) they are the ec2 instance type and medium/large are the sizes
+
+What Is Amazon EC2?
+Amazon EC2 is a web service that provides secure, resizable compute capacity in the cloud. It allows you to provision virtual servers called EC2 instances. Although AWS uses the phrase “web service” to describe it, it doesn’t mean that you are limited to running just web servers on your EC2 instances. You can create and manage these instances through the AWS Management Console, the AWS Command Line Interface (CLI), AWS Software Development Kits (SDKs),
+
+When launching an EC2 instance, the first setting you configure is which operating system you want by selecting an Amazon Machine Image (AMI).
+What Is an AMI?
+In the traditional infrastructure world, the process of spinning up a server consists of installing an operating system from installation disks, installation drives, or installation wizards over the network. In the AWS Cloud, this operating system installation is no longer your responsibility, and is instead built into the AMI that you choose.Not only does an AMI let you configure which operating system you want, you can also select storage mappings, the architecture type (such as 32-bit, 64-bit, or 64-bit ARM), and additional software installed.
+
+When you launch a new instance, AWS allocates a virtual machine that runs on a hypervisor. Then the AMI you selected is copied to the root device volume, which contains the image used to boot the volume. In the end, you get a server you can connect to and install packages and any additional software.
+
+You can select an AMI from the following categories.
+Quick Start AMIs that are premade by AWS and allow you to get started quickly.
+AWS Marketplace AMIs that provide popular open source and commercial software from third-party vendors.
+My AMIs that are created from your EC2 instances.
+Community AMIs that are provided by the AWS user community.
+Build your own custom image with EC2 Image Builder.
+
+What Makes Up an EC2 Instance?
+EC2 instances are a combination of virtual processors (vCPUs), memory, network, and in some cases, instance storage and graphics processing units (GPUs). When you create an EC2 instance, you need to choose how much you need of each of these components.AWS offers a variety of instances that differ based on performance. 
+
+Where Does Your EC2 Instance Live?
+By default, your EC2 instances are placed in a network called the default Amazon Virtual Private Cloud (VPC). This network was created so that you can easily get started with Amazon EC2 without having to learn how to create and configure a VPC. 
+
+Explore the EC2 Instance Lifecycle
+An EC2 instance transitions between different states from the moment you create it all the way through to its termination. When you launch an instance, it enters the pending state (1). When the instance is pending, billing has not started. At this stage, the instance is preparing to enter the running state. Pending is where AWS performs all actions needed to set up an instance, such as copying the AMI content to the root device and allocating the necessary networking components. When your instance is running (2), it's ready to use. This is also the stage where billing begins. As soon as an instance is running, you are then able to take other actions on the instance, such as reboot, terminate, stop, and stop-hibernate. When you reboot an instance (3), it’s different than performing a stop action and then a start action. Rebooting an instance is equivalent to rebooting an operating system. The instance remains on the same host computer and maintains its public and private IP address, and any data on its instance store. It typically takes a few minutes for the reboot to complete. When you stop and start an instance (4), your instance may be placed on a new underlying physical server. Therefore, you lose any data on the instance store that were on the previous host computer. When you stop an instance, the instance gets a new public IP address but maintains the same private IP address. When you terminate an instance (5), the instance store are erased, and you lose both the public IP address and private IP address of the machine. Termination of an instance means you can no longer access the machine. 
+
+PRICING
+There are three main purchasing options for EC2 instances: on-demand, reserved, and spot instances. 
+
