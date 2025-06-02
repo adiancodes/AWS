@@ -1,0 +1,12 @@
+AWS Lambda is one of the serverless compute service we have available over the aws
+you upload all your code.zip into a lambda function (lambda function runs in response to triggers(http requests, events originating from requests) that means when to run)
+Runtime is a language in which you write your function in 
+Every definition of serverless mentions four aspects.
+No servers to provision or manage.Scales with usage.You never pay for idle resources.Availability and fault tolerance are built-in.
+
+AWS Fargate is a purpose-built serverless compute engine for containers. Fargate scales and manages the infrastructure, allowing developers to work on what they do best: application development.
+It achieves this by allocating the right amount of compute, eliminating the need to choose and handle EC2 Instances and cluster capacity and scaling. Fargate supports both Amazon ECS and Amazon EKS architecture and provides workload isolation and improved security by design.
+
+If you want to deploy your workloads and applications without having to manage any EC2 instances or containers, you can use AWS Lambda.AWS Lambda lets you run code without provisioning or managing servers or containers. You can run code for virtually any type of application or backend service, including data processing, real-time stream processing, machine learning, WebSockets, IoT backends, mobile backends, and web apps, like your corporate directory app! AWS Lambda requires zero administration from the user. You upload your source code and Lambda takes care of everything required to run and scale your code with high availability. There are no servers to manage, bringing you continuous scaling with subsecond metering and consistent performance.
+
+
